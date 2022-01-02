@@ -1,0 +1,25 @@
+.process-section {
+  @include bg;
+  .process {
+    &__single {
+      width: 24%;
+      h4 {
+        background-color: $primary__color;
+        padding: 10px;
+        position: relative;
+        border-radius: 5px;
+        span {
+          position: absolute;
+          background-color: red;
+          top: 0;
+          right: 0;
+          padding: 10px;
+          border-radius: 0px 5px 5px 0px;
+        }
+      }
+      p {
+        padding-top: 20px;
+      }
+    }
+  }
+}

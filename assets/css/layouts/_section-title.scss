@@ -1,0 +1,28 @@
+.section__title {
+  text-align: center;
+  padding: 50px 0;
+  h5 {
+    text-transform: lowercase;
+  }
+  h4 {
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 7px;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 1.5px;
+      background-color: $primary__color;
+    }
+  }
+  p {
+    font-size: 18px;
+    width: 750px;
+    margin: 0 auto;
+  }
+}

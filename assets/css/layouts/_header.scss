@@ -1,0 +1,31 @@
+.header-section {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding-top: 20px;
+  .header {
+    &__logo {
+      a {
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 800;
+        color: $white;
+      }
+    }
+    &__menu {
+      ul {
+        li {
+          &:nth-child(1) a {
+            color: $primary__color;
+          }
+          a {
+            padding-left: 15px;
+            font-size: 20px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

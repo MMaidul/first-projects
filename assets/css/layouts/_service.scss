@@ -1,0 +1,27 @@
+.service-section {
+  padding: 100px 0;
+  .service {
+    &__single {
+      width: calc(95% / 3);
+      box-shadow: 10px 10px 40px $gray;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        width: 0%;
+        left: 0;
+        height: 1%;
+        background-color: $primary__color;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}

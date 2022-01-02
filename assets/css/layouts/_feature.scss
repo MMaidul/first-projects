@@ -1,0 +1,46 @@
+.feature-section {
+  background-color: $gray;
+  position: relative;
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+  &::after {
+    background-image: url(../../assets/img/features/feature-1.jpg);
+    background-size: cover;
+    background-position: top center;
+    z-index: 1;
+  }
+  &::before {
+    background-color: $black;
+    opacity: 0.75;
+    z-index: 2;
+  }
+
+  .feature {
+    &__content {
+      width: 45%;
+      .section__title p {
+        width: 100%;
+      }
+      &-single {
+        width: 46%;
+        margin-top: 4rem;
+        h4 {
+          padding: 10px 0;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    &__img {
+      width: 50%;
+    }
+  }
+}

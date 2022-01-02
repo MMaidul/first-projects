@@ -1,0 +1,25 @@
+.banner-section {
+  @include bg;
+  height: 100vh;
+  .banner {
+    &__content {
+      height: 100vh;
+      h2 {
+        padding: 10px 0;
+      }
+      p {
+        font-size: 18px;
+        width: 720px;
+        margin: 0 auto;
+        padding-bottom: 40px;
+      }
+    }
+    &__btn {
+      &-btn {
+        &:first-child {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

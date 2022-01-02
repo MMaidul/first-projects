@@ -1,0 +1,72 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+$headings: (p, 16px, 22px, 400), (h6, 16px, 22px, 400), (h5, 20px, 24px, 400),
+  (h4, 28px, 32px, 500), (h3, 32px, 38px, 600), (h2, 38px, 32px, 700),
+  (h1, 40px, 48px, 700);
+
+@each $title, $font_size, $line_height, $font_weight in $headings {
+  #{$title} {
+    font-size: $font_size;
+    line-height: $line_height;
+    font-weight: $font_weight;
+  }
+}
+
+//text-transform;
+$text_transform: uppercase, lowercase, capitalize;
+@each $var in $text_transform {
+  .text-#{$var} {
+    text-transform: $var;
+  }
+}
+//text-align;
+$text_align: left, center, right, justify;
+@each $var in $text_align {
+  .text-#{$var} {
+    text-align: $var;
+  }
+}
+
+//flex;
+$flex: flex, inline-flex;
+@each $var in $flex {
+  .d-#{$var} {
+    display: $var;
+  }
+}
+
+//flex__direction;
+$flex_direction: column, column-reverse, row, row-reverse;
+@each $var in $flex_direction {
+  .flex-#{$var} {
+    flex-direction: $var;
+  }
+}
+
+//flex__wrap;
+$flex_wrap: wrap, nowrap;
+@each $var in $flex_wrap {
+  .flex-#{$var} {
+    flex-wrap: $var;
+  }
+}
+//justify_content;
+$justify_content: left, right, center, end, space-between, space-around,
+  space-evenly;
+@each $var in $justify_content {
+  .justify-#{$var} {
+    justify-content: $var;
+  }
+}
+
+//justify_content;
+$align-items: left, right, center, space-between, space-around, space-evenly;
+@each $var in $align-items {
+  .items-#{$var} {
+    align-items: $var;
+  }
+}
